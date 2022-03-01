@@ -1,0 +1,103 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    max-width: 700px;
+    height: 400px;
+    border: 1px solid #80808029;
+    margin: 75px auto;
+    text-align: center;
+    text-transform: capitalize;
+    overflow: hidden;
+    position: relative;
+}
+
+.silde {
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: 92%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.silde.one {
+    /* background-image: url("pexels-photo-6011215.jpeg"); */
+    background-color: #777;
+}
+
+.silde.two {
+    /* background-image: url("pexels-photo-5213347.jpeg"); */
+    background-color: #666;
+}
+
+.silde.three {
+    /* background-image: url("pexels-photo-7524421.jpeg"); */
+    background-color: #555;
+}
+
+.silde.forth {
+    /* background-image: url("pexels-photo-7524421.jpeg"); */
+    background-color: #444;
+}
+
+span {
+    font-size: 54px;
+}
+
+.content {
+    color: white;
+}
+
+.carousel-indictor {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button {
+    cursor: pointer;
+    width: 30px;
+    border: none;
+    height: 5px;
+    background-color: #aaaaaa;
+}
+
+.arrow-right {
+    position: absolute;
+    color: #fffefeba;
+    top: 50%;
+    right: 50px;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.arrow-left {
+    position: absolute;
+    color: #fffefeba;
+    top: 50%;
+    left: 50px;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#active {
+    opacity: 1;
+    transition-delay: 0.1s;
+}
+
+#activeBtn {
+    background: white;
+}
